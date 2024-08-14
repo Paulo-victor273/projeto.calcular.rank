@@ -2,7 +2,8 @@ function calcularRank(vitorias,derrotas ) {
     
     let saldoVitorias = vitorias - derrotas;
     let nivel = '';
-
+    let vitorias = 30 ;
+    let derrotas = 5 ;
     if (vitorias < 10) {
         nivel = 'Ferro';
     } else if (vitorias >= 11 && vitorias <= 20) {
@@ -20,7 +21,7 @@ function calcularRank(vitorias,derrotas ) {
     }
 
     
-    console.log(`O Herói tem de saldo de ${30} está no nível de ${prata}`);
+    console.log(`O Herói tem o saldo de ${saldoVitorias} está no nível de ${nivel}`);
 }
 
 
